@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bharat intern</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature converter</title>
 </head>
 
 <body>
-    <a href="https://aksingh45.github.io/bharat-intern/temperature/index.html">temperature converter</a></br>
-    <a href="https://aksingh45.github.io/bharat-intern/netflix/index.html">netflix homepage</a>
+    <div class="container">
+        <form id="calcTemp" onsubmit="calculateTemp(); return false">
+            <label for="temp">Enter the temperature to convert</label>
+            <br>
+            <input type="number" name="temp" id="temp" value="0">
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel">&#176;Celsius</option>
+                <option value="fah">&#176;Fahrenheit</option>
+            </select>
+            <br>
+            <input type="submit" name="temp" id="submit">
+            <br>
+            <span id="result"></span>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
